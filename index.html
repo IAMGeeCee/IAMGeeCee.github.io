@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
@@ -100,6 +100,8 @@
         padding-right: 37px;
       }
 
+      /* Hero */
+
       .hero {
         height: 76vh;
       }
@@ -175,15 +177,112 @@
       background: linear-gradient(184.31deg, #E04AC9 7.01%, #DBE66E 100.26%);
     }
 
+    /* End of hero */
+
     .squiggle {
       position: relative;
       left: -150px;
       top: 50px;
+      margin-bottom: 100px;
     }
+
+    /* Bento */
+
+    .bento {
+      width: 100%;
+      max-width: 1500px;
+      height: 750px;
+      display: grid;
+      gap: 1.5vw;
+      padding: 1vw;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: auto;
+      grid-template-areas:
+        "box1 box1 box2 box2 box3"
+        "box4 box5 box2 box2 box3"
+        "box6 box6 box6 box7 box8";
+    }
+
+    .bentoBox {
+      border: 0px solid rgba(217, 217, 217, 0.75);
+      background-color: rgba(217, 217, 217, 0.75);
+      border-radius: 25px;
+    }
+
+    .bento .bentoBox:nth-child(1) {
+      grid-area: box1;
+    }
+
+    .bento .bentoBox:nth-child(2) {
+      grid-area: box2;
+    }
+
+    .bento .bentoBox:nth-child(3) {
+      grid-area: box3;
+    }
+
+    .bento .bentoBox:nth-child(4) {
+      grid-area: box4;
+    }
+
+    .bento .bentoBox:nth-child(5) {
+      grid-area: box5;
+    }
+
+    .bento .bentoBox:nth-child(6) {
+      grid-area: box6;
+    }
+
+    .bento .bentoBox:nth-child(7) {
+      grid-area: box7;
+    }
+
+    .bento .bentoBox:nth-child(8) {
+      grid-area: box8;
+    }
+
+    /* End of Bento */
+
+    /* Stuff i did */
+
+    .thingIDid {
+      width: 100%;
+      height: 500px;
+      border-radius: 25px;
+      margin-bottom: 200px;
+    }
+
+    .thingIDidImage {
+      width: 500px;
+      height: 500px;
+      background-color: rgba(217, 217, 217, 0.75);
+      border-radius: 25px;
+      float: left;
+    }
+
+    .thingIDid h1 {
+      text-align: left;
+      margin-left: 500px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .thingIDid p {
+      text-align: left;
+      margin-left: 500px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /*End of Stuff i did*/
   </style>
 </head>
 
 <body>
+
+  <!-- Hero section -->
   <div class="hero">
     <div class="nav">
 
@@ -212,6 +311,48 @@
   </div>
   <img src="https://img.icons8.com/?size=100&id=86310&format=png&color=000000" class="scrollIcon" />
   <img src="Assets/squiggle.png" class="squiggle" />
+
+  <!-- Bento section -->
+  <div class="bento">
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+    <div class="bentoBox"></div>
+  </div>
+
+  <img src="Assets/squiggle.png" class="squiggle" />
+
+  <!-- Stuff i did -->
+
+  <div class="thingIDid">
+    <div class="thingIDidImage">
+
+    </div>
+    <h1>This is a thing i did that i'm making have a quite long name so i can see it</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </div>
+  <div class="thingIDid">
+
+    <h1 style="float:right;margin-left: 0px;margin-right: 500px;">This is a thing i did that i'm making have a quite long name so i can see it</h1>
+    <p style="float:right;margin-left: 0px;margin-right: 500px;">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <div class="thingIDidImage" style="float:right">
+
+    </div>
+  </div>
 </body>
 
 </html>
